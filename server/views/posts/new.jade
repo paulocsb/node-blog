@@ -1,0 +1,20 @@
+extends ./../template
+
+block content
+
+	include ./../shared/link_back_home
+
+	include ./../shared/alert_success
+	include ./../shared/alert_error
+
+	h2 Create new Post
+	form.form.form-create-post(action="/posts", method="post")
+		div.form-group
+			input.form-control(type="text", name="title", placeholder="title")
+		div.form-group
+			textarea.form-control(rows="6", name="description", placeholder="description")
+		hr
+		button.btn.btn-default(type="submit") Create
+
+block scripts
+	script(src='/js/app.js')

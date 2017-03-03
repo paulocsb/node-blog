@@ -1,0 +1,42 @@
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #555;
+}
+@media (min-width: 1200px)
+.container {
+  width: 970px;
+}
+.blog-header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.blog-header .blog-title {
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-size: 60px;
+	font-weight: normal;
+}
+.blog-header .blog-description {
+	font-size: 20px;
+	color: #999;
+}
+.blog-header .lead {
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+}
+.blog-main {
+	font-size: 18px;
+  line-height: 1.5;
+}
+.blog-post {
+	margin-bottom: 60px;
+}
+.blog-post-title {
+	margin-bottom: 5px;
+}
+.blog-post-meta {
+	margin-bottom: 20px;
+	color: #999;
+}

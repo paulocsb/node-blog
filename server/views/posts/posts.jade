@@ -1,0 +1,9 @@
+- posts = typeof(posts) != 'undefined' ? posts : []
+
+for post in posts
+	div.blog-main
+		div.blog-post
+			h2.blog-post-title= post.title
+			p.blog-post-meta= post.date
+			hr
+			p= post.description

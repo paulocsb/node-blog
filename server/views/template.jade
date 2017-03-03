@@ -1,9 +1,24 @@
 doctype html
 html
 	head
-		title Coding Bull Blog
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+		title NodeJs Blog
+		link(rel='stylesheet',
+				href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+				integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u',
+				crossorigin='anonymous')
+		link(rel='stylesheet', href='/css/style.css')
 	body
 
 		div.container
-			block content
+			div.row.clearfix
+				div.col-md-6.col-md-offset-3
+					div.blog-header.text-center
+						h1.blog-title The NodeJs Blog
+						p.lead.blog-description The simple example of creating a blog with NodeJs.
+
+					block content
+
+		script(src="https://code.jquery.com/jquery-3.1.1.min.js",
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=",
+			crossorigin="anonymous")
+		block scripts

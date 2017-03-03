@@ -1,21 +1,6 @@
-h1 BLOG
+extends template
 
 block content
-	h2 Create POST
 
-	form(action="posts/", method="post")
-		input.form-control(type="text")
-		button.btn.btn-default(value="Create")
-
-	hr
-
-	- if posts.length > 0
-		- for(var i = 0; i posts.length; i++)
-			div.panel.panel-default
-				div.pabel-body
-					h1 post[i].title
-					hr
-					p post[i].description
-
-block scripts
-script(src='/js/views/app.js')
+	include shared/link_create_post
+	include posts/posts
