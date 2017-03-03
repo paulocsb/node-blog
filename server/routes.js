@@ -67,7 +67,7 @@ module.exports = function(app) {
 		});
 
 		app.get('/posts/new', (req, res) => {
-		  res.render('posts/new', { title: 'Blog - Coding Bull' });
+		  res.render('posts/new', { title: 'The NodeJs Blog' });
 		});
 
 		app.post('/posts', (req, res) => {
